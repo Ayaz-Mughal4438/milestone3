@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Helvetica";
+    background-color: rgb(196, 235, 223);
+    color: rgb(8, 8, 8);
+    padding: 30px; /* Fixed padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    background-color: azure;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Fixed 'rgbs' to 'rgba' */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+form:hover{
+    transform: translateY(-10px);
+}
+
+form h2{
+    color: #333; /* Updated for better contrast */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border-color: gray;
+}
+
+button{
+    background-color: rgb(216, 186, 13);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: coral;
+}
+#profilePicture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profilePicture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%; /* Circular image */
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+#resumeOutput{
+    margin-top: 30px;
+    background-color: #51727c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+}
+
+#resumeOutput h2{
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#resumeOutput p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#resumeOutput strong{
+    color: #0b1820;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    right: -50px;
+    left: -50px;
+    background: linear-gradient(120deg, #fff, #ccc); /* Fixed '120dag' to '120deg' */
+    z-index: -1;
+    filter: blur(100px);
+}
